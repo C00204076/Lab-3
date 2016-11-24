@@ -54,76 +54,82 @@ void Game::draw()
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glClear(GL_COLOR_BUFFER_BIT);
 	//
-	glBegin(GL_TRIANGLES);
-	{
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-		glVertex3f(2.0, -2.0, -5.0);
-	}
+	//glBegin(GL_TRIANGLES);
+	//{
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//}
 
 	//
-	glBegin(GL_POINTS);
-	{
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-		glVertex3f(2.0, -2.0, -5.0);
-	}
+	//glBegin(GL_POINTS);
+	//{
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//}
 	//
-	glBegin(GL_LINES);
-	{
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-	
-		glVertex3f(2.0, -2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-	
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(2.0, -2.0, -5.0);
-	}
+	//glBegin(GL_LINES);
+	//{
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
 	//
-	glBegin(GL_LINE_STRIP);
-	{
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-		glVertex3f(2.0, -2.0, -5.0);
-		glVertex3f(0.0, 2.0, -5.0);
-	}
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
 	//
-	glBegin(GL_LINE_LOOP);
-	{
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-		glVertex3f(2.0, -2.0, -5.0);
-	}
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//}
 	//
-	glBegin(GL_TRIANGLE_STRIP);
-	{
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-		glVertex3f(2.0, -2.0, -5.0);
-	}
+	//glBegin(GL_LINE_STRIP);
+	//{
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//}
 	//
-	glBegin(GL_TRIANGLE_FAN);
-	{
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-		glVertex3f(2.0, -2.0, -5.0);
-	}
+	//glBegin(GL_LINE_LOOP);
+	//{
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//}
 	//
-	glBegin(GL_QUADS);
-	{
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-		glVertex3f(2.0, -2.0, -5.0);
-	}
-	//
-	glBegin(GL_QUAD_STRIP);
-	{
-		glVertex3f(0.0, 2.0, -5.0);
-		glVertex3f(-2.0, -2.0, -5.0);
-		glVertex3f(2.0, -2.0, -5.0);
-	}
-	//
+	//glBegin(GL_TRIANGLE_STRIP);
+	//{
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//	glVertex3f(1, 1, -5);
+	//}
+	////
+	//glBegin(GL_TRIANGLE_FAN);
+	//{
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//  glVertex3f(1,1,-5);
+	//}
+	////
+	//glBegin(GL_QUADS);
+	//{
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//	glVertex3f(-2.0, 0.0, 5.0);
+	//}
+	////
+	//glBegin(GL_QUAD_STRIP);
+	//{
+	//	glVertex3f(0.0, 2.0, -5.0);
+	//	glVertex3f(-2.0, -2.0, -5.0);
+	//	glVertex3f(2.0, -2.0, -5.0);
+	//	glVertex3f(-2.0, 0.0, 5.0);
+	//	glVertex3f(0.0, 0.0, 0.0);
+	//	glVertex3f(-2.0, -2.0, 5.0);
+	//}
+	////
 	glBegin(GL_POLYGON);
 	{
 		glVertex3f(0.0, 2.0, -5.0);
